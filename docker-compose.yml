@@ -1,7 +1,6 @@
-version: '3.8'
+version: "3.8"
 
 services:
-
   mongo:
     image: mongo:6
     container_name: mongo
@@ -12,18 +11,16 @@ services:
       - mongo-data:/data/db
 
   backend:
-    build: ./backend
+    image: affancp/mean-backend:latest
     container_name: backend
     restart: always
     environment:
       - MONGO_URI=mongodb://mongo:27017/testdb
-    ports:
-      - "8080:8080"
     depends_on:
       - mongo
 
   frontend:
-    build: ./frontend
+    image: affancp/mean-frontend:latest
     container_name: frontend
     restart: always
     ports:
