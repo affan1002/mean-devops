@@ -33,7 +33,7 @@ GitHub Actions CI/CD
 
 ## 📦 Docker Images (DockerHub)
 
-![DockerHub Images](docs/images/dockerhub.png)
+![Docker image](image-1.png)
 
 Repository contains:
 
@@ -172,7 +172,7 @@ Expected containers:
 * Home Page
 ![home page](image.png)
 * Add Tutorial
-![add](image-1.png)
+![add toutorial]()
 * View Saved Data
 
 ---
@@ -196,3 +196,5 @@ The application is fully automated:
 * Website updated without manual intervention
 
 This demonstrates a complete DevOps deployment lifecycle.
+
+![alt text](image-4.png)
